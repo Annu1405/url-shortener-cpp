@@ -35,3 +35,48 @@ string shorten(string url) {
     
 }
 
+//func 3 : (expand code)
+string expand(string code) {
+    if(shortToLong.find(code) == shortToLong.end()) {
+            return "Code not found!";
+        }
+        else{
+            return shortToLong[code];
+            //shortToLong["akj38h"] - www.yt.com (key - value)
+        }
+
+}
+
+// last func main( ) here program actually starts running
+// everything else is just func waiting to be called
+int main() {
+    srand(time(0));
+int option;
+string url;
+string code;
+//func 4 main loop executes till user says exit
+    while(true) {
+        cout<< "Menu :" <<endl;
+        cout<< "1. Shorten" <<endl;
+        cout<< "2. Expand"  <<endl;
+        cout<< "3. Exit"  <<endl;
+        cout << "Enter your choice :";
+        cin >> option;
+        if( option == 1) {
+        cout << "Enter url to shorten:";
+        cin >> url;
+        cout << "Shortened code :" << shorten(url) << endl;
+        }
+        if( option == 2) {
+            cout << "Enter code to redirect to it's url :" ;
+            cin >> code;
+            cout << "Redirects to:" << expand(code) << endl;
+        }
+        if( option == 3) {
+        break;
+        }
+
+    }
+    return 0;
+}
+
