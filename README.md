@@ -2,7 +2,7 @@
 
 
 ## What it does
-To shorten url , and generate unique code by using HashMaps for fetching the results in O(1) time 
+To shorten url , and generate unique code by using HashMaps for fetching the results in O(1) time complexity.
 
 
 ## Concepts used
