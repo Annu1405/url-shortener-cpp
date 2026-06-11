@@ -22,3 +22,5 @@ g++ main.cpp -o shortener
 - HashMap gives O(1) lookup vs O(n) for arrays
 - Two maps can mirror each other to allow reverse lookup
 - Same URL always returns same code (no duplicates)
+
+## Documented also in python 
